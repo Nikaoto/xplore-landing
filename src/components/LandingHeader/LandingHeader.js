@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import strings from "../../values/strings"
 import "./LandingHeader.css"
 
 export default class LandingHeader extends Component {
@@ -18,8 +17,7 @@ export default class LandingHeader extends Component {
   }
 
   render() {
-    const language = this.props.language
-    const str = strings(language)
+    const str = this.props.strings
     const logo = this.props.logo
 
     return (

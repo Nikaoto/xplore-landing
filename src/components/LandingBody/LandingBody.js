@@ -9,9 +9,11 @@ export default class LandingBody extends Component {
 	}
 
 	render() {
+		const str = this.props.strings
+
 		return(
       <div className="landing-body">
-			 <h1>BODY</h1>
+			 <h1>{str.body}</h1>
       </div>
 		)
 	}

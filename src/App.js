@@ -25,11 +25,10 @@ class App extends Component {
 
     return (
       <div className="landing-page">
-        <p>{str.welcome}</p>
-        <LandingHeader language={language} languages={config.languages} logo={logo} 
+        <LandingHeader strings={str} languages={config.languages} logo={logo} 
           onLanguageChange={this.onLanguageChange} />
-        <LandingBody language={language}/>
-        <LandingFooter language={language}/>
+        <LandingBody strings={str}/>
+        <LandingFooter strings={str}/>
       </div>
     );
   }

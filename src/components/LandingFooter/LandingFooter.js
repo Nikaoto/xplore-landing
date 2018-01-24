@@ -9,9 +9,11 @@ export default class LandingFooter extends Component {
 	}
 
 	render() {
+    const str = this.props.strings
+
 		return(
       <div className="landing-footer">
-			 <h1>FOOTER</h1>
+			 <h1>{str.footer}</h1>
       </div>
     )
 	}
