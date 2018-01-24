@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import LandingHeader from "./components/LandingHeader"
 import LandingBody from "./components/LandingBody"
 import LandingFooter from "./components/LandingFooter"
-import strings from "./strings"
+import strings from "./values/strings"
+import config from "./values/config"
 import './App.css';
 
 class App extends Component {
@@ -25,7 +26,8 @@ class App extends Component {
     return (
       <div className="landing-page">
         <p>{str.welcome}</p>
-        <LandingHeader language={language} logo={logo} onLanguageChange={this.onLanguageChange}/>
+        <LandingHeader language={language} languages={config.languages} logo={logo} 
+          onLanguageChange={this.onLanguageChange} />
         <LandingBody language={language}/>
         <LandingFooter language={language}/>
       </div>

@@ -1,4 +1,5 @@
 const config = {
+  languages: ["en", "ka", "ru"],
 	defaultLanguage: "en",
 }
 
