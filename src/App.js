@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import LandingHeader from "./components/LandingHeader"
 import LandingBody from "./components/LandingBody"
 import LandingFooter from "./components/LandingFooter"
+import strings from "./strings"
 import './App.css';
 
 class App extends Component {
@@ -10,17 +11,6 @@ class App extends Component {
     super(props);
   
     this.state = {language: "en"};
-    this.strings = {
-      ka: {
-        text: "ტექსტი", 
-      },
-      en: {
-        text: "Text"
-      },
-      es: {
-        text: "Texteroni"
-      }
-    }
     this.onLanguageChange = this.onLanguageChange.bind(this)
   }
 
@@ -30,11 +20,11 @@ class App extends Component {
 
   render() {
     const language = this.state.language
-    const strings = this.strings[language]
+    const str = strings(language)
 
     return (
       <div className="landing-page">
-        <p>{strings.text}</p>
+        <p>{str.welcome}</p>
         <LandingHeader language={language} logo={logo} onLanguageChange={this.onLanguageChange}/>
         <LandingBody language={language}/>
         <LandingFooter language={language}/>
