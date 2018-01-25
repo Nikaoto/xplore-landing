@@ -22,9 +22,9 @@ export default class LandingHeader extends Component {
 
     return (
       <div className="landing-header">
-        <div>
-        <img className="header-logo" src={logo} />
-        <h1>{str.headerTitle}</h1>
+        <div className="header-logo-and-text">
+          <img className="header-logo" src={logo} />
+          <p className="header-text">{str.headerTitle}</p>
         </div>
         <div>
           <select className="language-select" onChange={this.onLanguageChange}>
