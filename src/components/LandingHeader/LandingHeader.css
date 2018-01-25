@@ -5,6 +5,13 @@
 	align-items: center;
   	height: 150px;
   	padding: 20px;
+  	background-color: #48c201;
+}
+
+.header-logo {
+	height: 100px;
+	max-width: 100%;
+	padding: 20px;
 }
 
 .language-select {
