@@ -11,8 +11,12 @@ class App extends Component {
   constructor(props) {
     super(props);
   
-    this.state = {language: "en"};
+    this.state = {language: config.defaultLanguage};
     this.onLanguageChange = this.onLanguageChange.bind(this)
+  }
+
+  componentDidMount() {
+    document.title = config.siteTitle
   }
 
   onLanguageChange(newLanguage) {
