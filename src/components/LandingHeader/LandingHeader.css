@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:100,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:400);
 
 .landing-header {
 	display: flex;
@@ -6,11 +7,11 @@
 	justify-content: space-around;
 	align-items: center;
     min-height: 70px;
-    max-height: 110px;
+    max-height: 85px;
   	background-color: #384452;
 }
 
-.header-logo-and-text {
+.header-logo-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -18,15 +19,15 @@
 }
 
 .header-logo {
-	max-height: 55px;
+	max-height: 48px;
 	padding-right: 18px;
 }
 
-.header-text {
+.header-logo-text {
 	font-family: Roboto;
 	font-weight: 100;
 	color: white;
-	font-size: 62px;
+	font-size: 55px;
 	line-height: 0px;
 	padding-top: 7px;
 }
@@ -34,9 +35,11 @@
 .language-select {
 	padding: 10px;
 	margin: 8px;
-	border-radius: 4px;
-	font-size: 18px;
+	border-color: #2b3744;
+	border-radius: 6px;
+	border-width: 3px;
+	font-family: Lato;
+	font-size: 20px;
 	color: white;
 	background-color: #384452;
-	border-color: #384452;
 }

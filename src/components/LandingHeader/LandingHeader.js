@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import LanguageSelect from "../LanguageSelect"
 import "./LandingHeader.css"
 
 export default class LandingHeader extends Component {
@@ -9,8 +10,7 @@ export default class LandingHeader extends Component {
     this.onLanguageChange = this.onLanguageChange.bind(this)
   }
 
-  onLanguageChange(e) {
-    const newLanguage = e.target.value
+  onLanguageChange(newLanguage) {
     console.log("New language:", newLanguage)
 
     this.props.onLanguageChange(newLanguage)
@@ -22,14 +22,12 @@ export default class LandingHeader extends Component {
 
     return (
       <div className="landing-header">
-        <div className="header-logo-and-text">
+        <div className="header-logo-container">
           <img className="header-logo" src={logo} />
-          <p className="header-text">{str.headerTitle}</p>
+          <p className="header-logo-text">{str.headerTitle}</p>
         </div>
         <div>
-          <select className="language-select" onChange={this.onLanguageChange}>
-            {this.props.languages.map(size => <option key={size}>{size}</option>)}
-          </select>
+          <LanguageSelect onLanguageChange={this.onLanguageChange}/>
         </div>
       </div>
     )
