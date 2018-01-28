@@ -3,10 +3,15 @@ import blank from "./blank.gif"
 import "./flags.css"
 import "./LanguageSelect.css"
 
+const languageNames = {
+  en: "English, US",
+  ka: "ქართული",
+  ru: "Русский",
+}
+
 export default class LanguageSelect extends Component {
   constructor(props) {
     super(props);
-    
     this.state = {buttonTextColor: "#b1b7bf", showList: false};
     this.onMouseEnter = this.onMouseEnter.bind(this)
     this.onMouseLeave = this.onMouseLeave.bind(this)
@@ -41,15 +46,15 @@ export default class LanguageSelect extends Component {
         <ul id="languageList" className="dropdown-content">
           <li className="dropdown-option" onClick={() => this.changeLanguage("en")}>
             <img src={blank} className="flag flag-us" alt="EN_US"/>
-            English, US
+            {languageNames.en}
           </li>
           <li className="dropdown-option" onClick={() => this.changeLanguage("ka")}>
             <img src={blank} className="flag flag-ge" alt="KA_GE"/>
-            ქართული
+            {languageNames.ka}
           </li>
           <li className="dropdown-option" onClick={() => this.changeLanguage("ru")}>
             <img src={blank} className="flag flag-ru" alt="RU"/>
-            Ruski
+            {languageNames.ru}
           </li>
         </ul>
       )
