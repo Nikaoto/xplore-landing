@@ -14,8 +14,8 @@ export default class LandingBody extends Component {
 		const styles = allStyles(this.props.language);
 
 		return(
-      <div className="landing-body">
-      	<div className="heading-container">
+      <div className="landing-body row">
+      	<div className="heading-container col-md-6">
       		<h1 className="heading-title" style={styles.headingTitle}>{str.heading}</h1>
       		<p className="heading-paragraph" style={styles.headingParagraph}>{str.headingParagraph}</p>
       	</div>

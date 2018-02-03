@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-@import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
-@import url("//cdn.web-fonts.ge/fonts/bpg-rioni-arial/css/bpg-rioni-arial.min.css");
-@import url("//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css");
-@import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
-@import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css");
-
 .landing-body {
 	margin-top: 30px;
 	display: flex;
@@ -25,6 +19,6 @@
 	color: white;
 }
 
-.heading-container p {
+.heading-paragraph {
 	color: #c6c6c6;
 }

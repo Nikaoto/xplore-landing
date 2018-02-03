@@ -19,7 +19,7 @@ const styleMap = {
   },
   ka: {
     headingTitle: {
-      fontFamily: "BPG Rioni Arial",
+      fontFamily: "BPG Rioni Vera",
       fontSize: 35,
       margin: 0,
     },
