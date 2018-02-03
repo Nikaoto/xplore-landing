@@ -15,7 +15,7 @@ export default class LandingBody extends Component {
 
 		return(
       <div className="landing-body row">
-      	<div className="heading-container col-md-6">
+      	<div className="heading-container col-md-9">
       		<h1 className="heading-title" style={styles.headingTitle}>{str.heading}</h1>
       		<p className="heading-paragraph" style={styles.headingParagraph}>{str.headingParagraph}</p>
       	</div>
