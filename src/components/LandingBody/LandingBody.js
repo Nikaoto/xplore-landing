@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import allStyles from "./styles"
 import "./LandingBody.css"
 
 export default class LandingBody extends Component {
@@ -10,12 +11,13 @@ export default class LandingBody extends Component {
 
 	render() {
 		const str = this.props.strings
+		const styles = allStyles(this.props.language);
 
 		return(
       <div className="landing-body">
       	<div className="heading-container">
-      		<h1 className="heading">{str.heading}</h1>
-      		<p className="heading-paragraph">{str.headingParagraph}</p>
+      		<h1 className="heading-title" style={styles.headingTitle}>{str.heading}</h1>
+      		<p className="heading-paragraph" style={styles.headingParagraph}>{str.headingParagraph}</p>
       	</div>
       </div>
 		)
