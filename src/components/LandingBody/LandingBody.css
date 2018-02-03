@@ -2,32 +2,38 @@
 
 @import url("//cdn.web-fonts.ge/fonts/bpg-arial/css/bpg-arial.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-rioni-arial/css/bpg-rioni-arial.min.css");
-@import url("//cdn.web-fonts.ge/fonts/bpg-ingiri-arial/css/bpg-ingiri-arial.min.css");
+@import url("//cdn.web-fonts.ge/fonts/arial-geo/css/arial-geo.min.css");
 @import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-mrgvlovani/css/bpg-mrgvlovani.min.css");
 
 .landing-body {
-	color: #f2f2f2;
 	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
 }
 
 .heading-container {
+	align-self: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 30px;
 	text-align: center;
+	padding: 30px;
 }
 
 .heading {
+	color: white;
 	font-family: "BPG Rioni Arial", "Lato";
 	font-weight: 700;
-	font-size: 40px;
-	margin-bottom: 0px;
+	font-size: 32px;
+	margin: 0px;
 }
 
 .heading-container p {
-	font-family: system-ui, "BPG Rioni Arial";
-	font-size: 18px;
-	max-width: 800px;
+	font-family: "BPG Mrgvlovani";
+	max-width: 660px;
+	font-size: 14px;
+	font-weight: 100;
 	color: #c6c6c6;
 }
+/* GEO sizes: container max width: 750;  */
