@@ -22,14 +22,36 @@ export default class LandingHeader extends Component {
 
     return (
       <div className="landing-header">
-        <div className="header-logo-container">
-          <img className="header-logo" src={logo} />
-          <p className="header-logo-text">{str.headerTitle}</p>
+        <div className="left-side">
+          <div className="header-logo-parent">
+            <img className="header-logo-image" src={logo} />
+            <p className="header-logo-text">{str.headerTitle}</p>
+          </div>
+          {/*<div className="navbar" style={{backgroundColor: "red", width: 300, height: 50}}>
+          </div>*/}
         </div>
-        <div>
-          <LanguageSelect onLanguageChange={this.onLanguageChange}/>
+        <div className="right-side">
+          <div>
+            <LanguageSelect onLanguageChange={this.onLanguageChange}/>
+          </div>
         </div>
       </div>
     )
   }
 }
+
+// <div className="landing-header">
+//   <div className="left-side">
+//     <div className="header-logo-parent">
+//       <img className="header-logo-image" src={logo} />
+//       <p className="header-logo-text">{str.headerTitle}</p>
+//     </div>
+//     <div className="navbar" style={{backgroundColor: "red"}}>
+//     </div>
+//   </div>
+//   <div className="right-side" style={{backgroundColor: "green"}}>
+//     <div>
+//       <LanguageSelect onLanguageChange={this.onLanguageChange}/>
+//     </div>
+//   </div>
+// </div>

@@ -1,32 +1,41 @@
 .landing-header {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
     min-height: 70px;
     max-height: 85px;
   	background-color: #384452;
 }
 
-.header-logo-container {
+.left-side {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header-logo-parent {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
 
-.header-logo {
+.header-logo-image {
 	max-height: 48px;
 	padding-right: 18px;
 }
 
 .header-logo-text {
-	font-family: Roboto;
-	font-weight: 100;
+	font-family: Lato;
+	font-weight: 700;
 	color: white;
 	font-size: 55px;
 	line-height: 0px;
 	padding-top: 7px;
+}
+
+.right-side {
 }
 
 .language-select {
