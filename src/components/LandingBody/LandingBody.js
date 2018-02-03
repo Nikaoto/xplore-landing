@@ -13,7 +13,10 @@ export default class LandingBody extends Component {
 
 		return(
       <div className="landing-body">
-			 <h1>{str.body}</h1>
+      	<div className="heading-container">
+      		<h1 className="heading">{str.heading}</h1>
+      		<p className="heading-paragraph">{str.headingParagraph}</p>
+      	</div>
       </div>
 		)
 	}

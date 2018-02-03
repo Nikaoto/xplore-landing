@@ -5,6 +5,8 @@ const defaultLanguage = config.defaultLanguage
 const stringMap = {
   en: {
     headerTitle: "XPLORE",
+    heading: "Hikers, it's time we ditched Facebook.",
+    headingParagraph: "All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone. Stop paying for TeamSpeak servers and hassling with Skype. Simplify your life.",
     welcome: "Welcome!",
     header: "HEADER",
     body: "BODY",
@@ -12,6 +14,8 @@ const stringMap = {
   },
   ka: {
     welcome: "კეთილი იყოს თქვენი მობრძანება!",
+    heading: "მოლაშქრეებო, დროა გადავაგდოთ Facebook-ი.",
+    headingParagraph: "ლაშქრობების, ტურებისა და ექსკურსიების საძებნი და დასაგეგმი პლატფორმა რომელიც მუშაობს ყველგან, უფასოდ და უსაფრთხოდ. გვეყო Facebook-ზე ჩალიჩი. გავიმარტივოთ ცხოვრება.",
     header: "სათაური",
     body: "სხეული",
     footer: "საფეხური",

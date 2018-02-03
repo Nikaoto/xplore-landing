@@ -13,7 +13,7 @@ export default class LandingFooter extends Component {
 
 		return(
       <div className="landing-footer">
-			 <h1>{str.footer}</h1>
+			 <h1>It's time to stop</h1>
       </div>
     )
 	}
