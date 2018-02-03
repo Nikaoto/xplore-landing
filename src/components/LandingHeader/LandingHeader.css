@@ -6,6 +6,8 @@
     min-height: 70px;
     max-height: 85px;
   	background-color: #384452;
+  	padding-left: 20px;
+  	padding-right: 20px;
 }
 
 .left-side {
@@ -19,6 +21,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	padding-right: 20px;
 }
 
 .header-logo-image {
@@ -30,16 +33,37 @@
 	font-family: Lato;
 	font-weight: 700;
 	color: white;
-	font-size: 55px;
-	line-height: 0px;
-	padding-top: 7px;
+	font-size: 57px;
 }
 
 .right-side {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px 30px 10px 30px;
+}
+
+.social-buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-right: 30px;
+}
+
+.social-buttons a {
+	margin-right: 10px;
+	padding: 8px;
+}
+
+.social-buttons > a > img {
+	opacity: 0.6;
+}
+
+.social-buttons > a > img:hover {
+	opacity: 1;
 }
 
 .language-select {
-	padding: 10px;
 	margin: 8px;
 	border-color: #2b3744;
 	border-radius: 6px;

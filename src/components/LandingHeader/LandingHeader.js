@@ -1,5 +1,9 @@
 import React, {Component} from "react"
 import LanguageSelect from "../LanguageSelect"
+import twitter from "./img/twitter.svg"
+import facebook from "./img/facebook.svg"
+import instagram from "./img/instagram.svg"
+import config from "../../values/config"
 import "./LandingHeader.css"
 
 export default class LandingHeader extends Component {
@@ -21,8 +25,8 @@ export default class LandingHeader extends Component {
     const logo = this.props.logo
 
     return (
-      <div className="landing-header">
-        <div className="left-side">
+      <div className="landing-header row">
+        <div className="left-side col-md-7">
           <div className="header-logo-parent">
             <img className="header-logo-image" src={logo} />
             <p className="header-logo-text">{str.headerTitle}</p>
@@ -30,28 +34,23 @@ export default class LandingHeader extends Component {
           {/*<div className="navbar" style={{backgroundColor: "red", width: 300, height: 50}}>
           </div>*/}
         </div>
-        <div className="right-side">
-          <div>
+        <div className="right-side col-md-4">
+            <div className="social-buttons">
+              <a href={config.twitterLink} rel="me">
+                <img src={twitter} height="23" width="23" alt={"xplore twitter"}/>
+              </a>
+              <a href={config.facebookLink} rel="me">
+                <img src={facebook} height="23" width="23" alt={"xplore twitter"}/>
+              </a>
+              <a href={config.instagramLink} rel="me">
+                <img src={instagram} height="23" width="23" alt={"xplore twitter"}/>
+              </a>
+            </div>'
+            <div>
+            </div>
             <LanguageSelect onLanguageChange={this.onLanguageChange}/>
-          </div>
         </div>
       </div>
     )
   }
 }
-
-// <div className="landing-header">
-//   <div className="left-side">
-//     <div className="header-logo-parent">
-//       <img className="header-logo-image" src={logo} />
-//       <p className="header-logo-text">{str.headerTitle}</p>
-//     </div>
-//     <div className="navbar" style={{backgroundColor: "red"}}>
-//     </div>
-//   </div>
-//   <div className="right-side" style={{backgroundColor: "green"}}>
-//     <div>
-//       <LanguageSelect onLanguageChange={this.onLanguageChange}/>
-//     </div>
-//   </div>
-// </div>
