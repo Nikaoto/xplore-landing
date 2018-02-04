@@ -25,7 +25,7 @@ export default class LandingHeader extends Component {
     const logo = this.props.logo
 
     return (
-      <div className="landing-header row">
+      <div className="header row">
         <div className="left-side col-md-7">
           <div className="header-logo-parent">
             <img className="header-logo-image" src={logo} />
@@ -35,22 +35,28 @@ export default class LandingHeader extends Component {
           </div>*/}
         </div>
         <div className="right-side col-md-4">
+
             <div className="social-buttons">
               <a href={config.twitterLink} rel="me">
-                <img src={twitter} height="23" width="23" alt={"xplore twitter"}/>
+                <img src={twitter} height={socialButtonSize} width={socialButtonSize} alt={"xplore twitter"}/>
               </a>
               <a href={config.facebookLink} rel="me">
-                <img src={facebook} height="23" width="23" alt={"xplore twitter"}/>
+                <img src={facebook} height={socialButtonSize} width={socialButtonSize} alt={"xplore twitter"}/>
               </a>
               <a href={config.instagramLink} rel="me">
-                <img src={instagram} height="23" width="23" alt={"xplore twitter"}/>
+                <img src={instagram} height={socialButtonSize} width={socialButtonSize} alt={"xplore twitter"}/>
               </a>
-            </div>'
-            <div>
             </div>
+
+            <div>
+              {/*Separator*/}
+            </div>
+
             <LanguageSelect onLanguageChange={this.onLanguageChange}/>
         </div>
       </div>
     )
   }
 }
+
+const socialButtonSize = 20
