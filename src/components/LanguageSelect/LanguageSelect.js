@@ -67,9 +67,9 @@ export default class LanguageSelect extends Component {
     return(
       <div className="dropdown" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
         <button className="dropdown-button">
-          <div style={{color: buttonTextColor, alignSelf: "center"}}>
-            <div style={{fontSize: 28, marginTop: -8, marginLeft: -13, marginBottom: -22}}>ა</div>
-            <div style={{marginLeft: 13}}>A</div>
+          <div style={{color: buttonTextColor, marginTop: -8}}>
+            <div style={{fontSize: 25, marginLeft: -9, marginBottom: -25}}>ა</div>
+            <div style={{fontSize: 20, marginLeft: 12}}>A</div>
           </div>
         </button>
         {this.renderList()}
