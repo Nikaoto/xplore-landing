@@ -1,3 +1,33 @@
 .landing-footer {
-	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	color: white;
+	font-family: Roboto;
+}
+
+.footer-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.footer-col {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+.footer-col > div {
+	margin-bottom: 4px;
+}
+
+.footer-link, .footer-link:visited, .footer-link:focus {
+	font-family: Roboto;
+	color: #c6c6c6;
+}
+
+.footer-link:hover, .footer-link:active {
+	color: white;
+	text-decoration: none;
 }
