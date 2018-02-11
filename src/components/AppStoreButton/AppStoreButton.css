@@ -1,0 +1,23 @@
+.app-store-btn {
+	display: flex;
+	padding: 11px;
+	margin-right: 10px;
+	border-radius: 50px;
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	font-family: inherit;
+	text-align: left;
+	transition: .25s ease-in;
+	min-width: 170px;
+}
+
+.app-store-btn:visited {
+	color: white;
+}
+
+.app-store-btn:hover, .app-store-btn:active {
+	transition: .3s ease-out;
+	background-color: white;
+	color: black;
+}

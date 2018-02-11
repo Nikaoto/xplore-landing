@@ -16,6 +16,16 @@ const styleMap = {
       fontWeight: 300,
       fontSize: 17,
     },
+    buttonContainer: { 
+      alignSelf: "center",
+      padding: "10px 20px 40px 20px",
+      display: "flex", 
+      flexDirection: "row", 
+      alignItems: "center",
+      justifyContent: "space-around",
+      fontFamily: "Lato",
+      fontSize: 15,
+    },
   },
   ka: {
     headingTitle: {

@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import "./AppleStoreButton.css"
-import androidIcon from "./android.svg"
+import appleIcon from "./apple.svg"
 
 export default class AppleStoreButton extends Component {
 
@@ -12,9 +12,9 @@ export default class AppleStoreButton extends Component {
   render() {
     return(
       <a className="apple-store-btn" href="#">
-        <img src={androidIcon}/>
+        <img src={appleIcon}/>
         <span>Get it on</span>
-        <span>Google Play</span>
+        <span>The App Store</span>
       </a>
     )
   }

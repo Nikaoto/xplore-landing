@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import PlayStoreButton from "../PlayStoreButton"
+import AppStoreButton from "../AppStoreButton"
 import allStyles from "./styles"
 import "./LandingBody.css"
 
@@ -20,8 +20,21 @@ export default class LandingBody extends Component {
       		<h1 className="heading-title" style={styles.headingTitle}>{str.heading}</h1>
       		<p className="heading-paragraph" style={styles.headingParagraph}>{str.headingParagraph}</p>
       	</div>
-        <div className="heading-container col-md-10">
-          <PlayStoreButton/>
+        <div className="col-md-5" style={styles.buttonContainer}>
+          <AppStoreButton
+            storeName={"Google Play"}
+            storeLink={"#"}
+            blackIcon={require("./img/android_black.png")}
+            whiteIcon={require("./img/android_white.png")}
+            animationTime={100}
+          />
+          <AppStoreButton
+            storeName={"App Store"}
+            storeLink={"#"}
+            blackIcon={require("./img/apple_black.png")}
+            whiteIcon={require("./img/apple_white.png")}
+            animationTime={100}
+          />
         </div>
       </div>
 		)
