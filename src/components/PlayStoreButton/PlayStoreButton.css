@@ -1,10 +1,23 @@
 .play-store-btn {
-	padding: 10px;
+	font-family: "Lato";
+	display: flex;
+	padding: 11px;
 	background-color: transparent;
 	border-radius: 50px;
 	text-align: left;
-	/*color: #333333;*/
 	color: white;
-	border: 1px solid white;
+	font-size: 15px;
+	border: 2px solid white;
 	margin-right: 10px;
+	transition: .25s ease-in
+}
+
+.play-store-btn:visited {
+	color: white;
+}
+
+.play-store-btn:hover, .play-store-btn:active {
+	transition: .3s ease-out;
+	background-color: white;
+	color: black;
 }
