@@ -25,7 +25,7 @@ export default class LandingHeader extends Component {
     const logo = this.props.logo
 
     return (
-      <div className="header row">
+      <div className="header container">
         <div className="left-side col-md-7">
           <div className="header-logo-parent">
             <img className="header-logo-image" src={logo} />
