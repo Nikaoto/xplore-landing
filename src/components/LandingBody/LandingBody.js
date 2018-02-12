@@ -18,11 +18,11 @@ export default class LandingBody extends Component {
 
 		return(
       <div className="landing-body row">
-      	<div className="heading-container col-md-9">
+      	<div className="heading-container col-sm-9">
       		<h1 className="heading-title" style={styles.headingTitle}>{str.heading}</h1>
       		<p className="heading-paragraph" style={styles.headingParagraph}>{str.headingParagraph}</p>
       	</div>
-        <div className="col-md-5" style={styles.buttonContainer}>
+        <div className="col-sm-5" style={styles.buttonContainer}>
           <AppStoreButton
             storeName={"Google Play"}
             storeLink={config.playStoreLink}

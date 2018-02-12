@@ -14,7 +14,7 @@ export default class Flame extends Component {
 
   componentWillMount() {
     this.setState({
-      positionX: this.getRandomInt(40, 100)
+      positionX: this.getRandomInt(this.props.minDisplacement || 0, this.props.maxDisplacement)
     })
 
     setTimeout(() => this.setState({visible: true}), this.props.delay)
@@ -22,7 +22,7 @@ export default class Flame extends Component {
 
   render() {
     if (this.state.visible == true) {
-      return <div className="flame" style={{ left: this.state.positionX }}/>
+      return <div className="flame" style={{ left: this.state.positionX, width: this.props.size, height: this.props.size }}/>
     } else {
       return <div/>
     }

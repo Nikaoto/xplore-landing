@@ -33,8 +33,6 @@
 .flame {
 	display: block;
 	position: absolute;
-	height: 100px;
-	width: 100px;
 	outline: 1px solid transparent;
 	background: yellow;
 	animation-duration: 1.5s;
