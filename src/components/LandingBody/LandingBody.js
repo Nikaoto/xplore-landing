@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import AppStoreButton from "../AppStoreButton"
 import allStyles from "./styles"
+import config from "../../values/config"
 import "./LandingBody.css"
 
 export default class LandingBody extends Component {
@@ -23,14 +24,14 @@ export default class LandingBody extends Component {
         <div className="col-md-5" style={styles.buttonContainer}>
           <AppStoreButton
             storeName={"Google Play"}
-            storeLink={"#"}
+            storeLink={config.playStoreLink}
             blackIcon={require("./img/android_black.png")}
             whiteIcon={require("./img/android_white.png")}
             animationTime={100}
           />
           <AppStoreButton
             storeName={"App Store"}
-            storeLink={"#"}
+            storeLink={config.appleStoreLink}
             blackIcon={require("./img/apple_black.png")}
             whiteIcon={require("./img/apple_white.png")}
             animationTime={100}
