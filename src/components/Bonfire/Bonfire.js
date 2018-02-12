@@ -4,8 +4,8 @@ import "./Bonfire.css"
 
 const flameSize = 100
 
-// Flame displacement (SUM MUST BE FLAMESIZE-10)
-const maxX = 90
+// Flame displacement (SUM MUST BE FLAMESIZE)
+const maxX = 100
 const minX = 0
 
 // Flame spawn delay
