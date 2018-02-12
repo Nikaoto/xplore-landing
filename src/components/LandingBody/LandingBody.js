@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import AppStoreButton from "../AppStoreButton"
+import Bonfire from "../Bonfire"
 import allStyles from "./styles"
 import config from "../../values/config"
 import "./LandingBody.css"
@@ -37,6 +38,7 @@ export default class LandingBody extends Component {
             animationTime={100}
           />
         </div>
+        <Bonfire/>
       </div>
 		)
 	}
