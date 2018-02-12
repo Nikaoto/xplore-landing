@@ -10,7 +10,7 @@
 
 @keyframes float-up-shrink {
 	0% {
-		transform: rotate(45deg);
+		transform: rotate(45deg) scale(1.12);
 		opacity: 1;
 		background: #ffff4d;
 	}

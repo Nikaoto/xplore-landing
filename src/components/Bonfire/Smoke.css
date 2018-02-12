@@ -4,12 +4,12 @@
 		opacity: 0.5;
 	}
 
-	50% {
-		opacity: 0.1;
+	40% {
+		opacity: 0.15;
 	}
 
 	100% {
-		transform: translate3d(0, -350px, 0) rotate(45deg) scale(2);
+		transform: translate3d(0, -320px, 0) rotate(45deg) scale(2);
 		opacity: 0;
 	}
 }
@@ -21,7 +21,7 @@
 	z-index: 0;
 	opacity: 0.5;
 	outline: 1px solid transparent;
-	animation-duration: 1.8s;
+	animation-duration: 2s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: infinite;
 	animation-name: float-up-expand;

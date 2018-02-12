@@ -1,22 +1,23 @@
 import React, { Component } from "react"
 import Flame from "./Flame"
 import Smoke from "./Smoke"
+import Rock from "../Rock"
 import "./Bonfire.css"
 
 const flameSize = 100
-const flameCount = 15
+const flameCount = 16
 const smokeSize = 100
-const smokeCount = 10
+const smokeCount = 7
 
 // Particle displacement (SUM MUST BE FLAMESIZE)
-const maxFlameX = 100
-const minFlameX = 0
+const maxFlameX = 90
+const minFlameX = -10
 const maxSmokeX = 130
 const minSmokeX = -30
 
 // Flame spawn delay
-const minDelay = 0
-const maxDelay = 1700
+const minDelay = 200
+const maxDelay = 1800
 
 export default class Bonfire extends Component {
 
@@ -55,6 +56,18 @@ export default class Bonfire extends Component {
     this.smoke = smoke 
   }
 
+  renderRocks() {
+    return(
+      <div style={{position: "absolute", top: 55, left: 60}}>
+        <Rock fillColor="#272727" style={{zIndex: 1, left: 80}}/>
+        <Rock fillColor="#212121" style={{zIndex: 2, left: 40, top: 10}}/>
+        <Rock fillColor="#1a1a1a" style={{zIndex: 3, top: 20}}/>
+        <Rock fillColor="#212121" style={{zIndex: 2, left: -40, top: 10}}/>
+        <Rock fillColor="#272727" style={{zIndex: 1, left: -80}}/>
+      </div>
+    )
+  }
+
   componentWillMount() {
     this.generateSmoke()
     this.generateFlames()
@@ -63,8 +76,10 @@ export default class Bonfire extends Component {
   render() {
     return(
       <div style={styles.container}>
+        <div style={styles.core} />
         {this.smoke}
         {this.flames}
+        {this.renderRocks()}
       </div>
     )
   }
@@ -76,6 +91,14 @@ const styles = {
     alignSelf: "center",
     left: -flameSize,
     marginTop: 200,
-    marginBottom: 100,
+    marginBottom: 200,
+  },
+  core: {
+    width: 150,
+    height: 30,
+    left: 15,
+    top: 60,
+    position: "absolute",
+    background: "#cc9900",
   }
 }
