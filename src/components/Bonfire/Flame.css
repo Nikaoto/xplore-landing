@@ -12,10 +12,10 @@
 	0% {
 		transform: rotate(45deg);
 		opacity: 1;
-		background: yellow;
+		background: #ffff4d;
 	}
 
-	70% {
+	60% {
 		background: #f69a2f;
 	}
 
@@ -34,7 +34,6 @@
 	display: block;
 	position: absolute;
 	outline: 1px solid transparent;
-	background: yellow;
 	animation-duration: 1.5s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: infinite;

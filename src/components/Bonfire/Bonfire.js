@@ -1,19 +1,22 @@
 import React, { Component } from "react"
 import Flame from "./Flame"
+import Smoke from "./Smoke"
 import "./Bonfire.css"
 
 const flameSize = 100
+const flameCount = 15
+const smokeSize = 100
+const smokeCount = 10
 
-// Flame displacement (SUM MUST BE FLAMESIZE)
-const maxX = 100
-const minX = 0
+// Particle displacement (SUM MUST BE FLAMESIZE)
+const maxFlameX = 100
+const minFlameX = 0
+const maxSmokeX = 130
+const minSmokeX = -30
 
 // Flame spawn delay
 const minDelay = 0
-const maxDelay = 1800
-
-// Flame count
-const count = 15
+const maxDelay = 1700
 
 export default class Bonfire extends Component {
 
@@ -26,22 +29,41 @@ export default class Bonfire extends Component {
     return fr + (to - fr) * road
   }
 
-  componentWillMount() {
+  generateFlames() {
     let flames = []
-    for (let i = 0; i < count; i++) {
+    for (let i = 0; i < flameCount; i++) {
       flames.push(
         <Flame key={i} 
-          delay={this.lerp(minDelay, maxDelay, i/count)} 
+          delay={this.lerp(minDelay, maxDelay, i/flameCount)} 
           size={flameSize}
-          minDisplacement={minX} maxDisplacement={maxX}/>
+          minDisplacement={minFlameX} maxDisplacement={maxFlameX}/>
       )
     }
     this.flames = flames
   }
 
+  generateSmoke() {
+    let smoke = []
+    for (let i = 0; i < smokeCount; i++) {
+      smoke.push(
+        <Smoke key={i} 
+          delay={this.lerp(minDelay, maxDelay, i/smokeCount)} 
+          size={smokeSize}
+          minDisplacement={minSmokeX} maxDisplacement={maxSmokeX}/>
+      )
+    }
+    this.smoke = smoke 
+  }
+
+  componentWillMount() {
+    this.generateSmoke()
+    this.generateFlames()
+  }
+
   render() {
     return(
       <div style={styles.container}>
+        {this.smoke}
         {this.flames}
       </div>
     )
