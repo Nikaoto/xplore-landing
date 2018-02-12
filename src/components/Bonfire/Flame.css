@@ -1,0 +1,45 @@
+@keyframes float-up {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(-250px);
+	}
+}
+
+@keyframes float-up-shrink {
+	0% {
+		transform: rotate(45deg);
+		opacity: 1;
+		background: yellow;
+	}
+
+	70% {
+		background: #f69a2f;
+	}
+
+	90% {
+		background: #ca6419;
+		opacity: 0.8;
+	}
+
+	100% {
+		transform: translate3d(0, -300px, 0) rotate(45deg) scale(0.1);
+		opacity: 0.1;
+	}
+}
+
+.flame {
+	display: block;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	outline: 1px solid transparent;
+	background: yellow;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-name: float-up-shrink;
+	transform: rotate(45deg);
+}

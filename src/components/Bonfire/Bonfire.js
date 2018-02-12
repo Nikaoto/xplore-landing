@@ -9,21 +9,25 @@ export default class Bonfire extends Component {
     this.state = { flames: []}
   }
 
-  renderFlames() {
-    //const rand = min + Math.random() * (max - min);
-    const rand = Math.random() * 10
+  lerp(fr, to, road) {
+    return fr + (to - fr) * road
+  }
+
+  componentWillMount() {
+    const count = 10
+    const minDelay = 0
+    const maxDelay = 1800
     let flames = []
-    for (let i = 0; i < rand; i++) {
-      flames.push(<Flame/>)
+    for (let i = 0; i < count; i++) {
+      flames.push(<Flame key={i} delay={this.lerp(minDelay, maxDelay, i/count)} />)
     }
-    return flames
+    this.flames = flames
   }
 
   render() {
     return(
-      <div style={styles.container}>
-        {this.renderFlames()}
-        <span>BONFIRE</span>
+      <div className="col-md-4" style={styles.container}>
+        {this.flames}
       </div>
     )
   }
@@ -32,26 +36,8 @@ export default class Bonfire extends Component {
 const styles = {
   container: {
     display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 100,
+    alignSelf: "center",
+    marginTop: 200,
     marginBottom: 100,
-  },
-  floatUp1: {
-    animationName: "float-up",
-  },
-  floatUp2: {
-    animationName: "float-up",
-    animationDelay: "0.8s",
-  },
-  floatRight: {
-    animationName: "float-up-right",
-  },
-  floatLeft1: {
-    animationName: "float-up-left",
-  },
-  floatLeft2: {
-    animationName: "float-up-left",
-    animationDelay: "0.5s",
-  },
+  }
 }
