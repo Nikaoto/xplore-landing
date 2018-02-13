@@ -10,10 +10,10 @@ const smokeSize = 100
 const smokeCount = 7
 
 // Particle displacement (SUM MUST BE FLAMESIZE)
-const maxFlameX = 90
-const minFlameX = -10
+const maxFlameX = 70
+const minFlameX = 10
 const maxSmokeX = 130
-const minSmokeX = -30
+const minSmokeX = -40
 
 // Flame spawn delay
 const minDelay = 200
@@ -58,7 +58,7 @@ export default class Bonfire extends Component {
 
   renderRocks() {
     return(
-      <div style={{position: "absolute", top: 55, left: 60}}>
+      <div style={{position: "absolute", top: 58, left: 60}}>
         <Rock fillColor="#272727" style={{zIndex: 1, left: 80}}/>
         <Rock fillColor="#212121" style={{zIndex: 2, left: 40, top: 10}}/>
         <Rock fillColor="#1a1a1a" style={{zIndex: 3, top: 20}}/>
@@ -97,7 +97,7 @@ const styles = {
     width: 150,
     height: 30,
     left: 15,
-    top: 60,
+    top: 63,
     position: "absolute",
     background: "#cc9900",
   }
