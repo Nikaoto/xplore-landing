@@ -9,14 +9,14 @@ const flameCount = 16
 const smokeSize = 100
 const smokeCount = 7
 
-// Particle displacement (SUM MUST BE FLAMESIZE)
+// Particle displacement
 const maxFlameX = 70
-const minFlameX = 10
+const minFlameX = 15
 const maxSmokeX = 130
 const minSmokeX = -40
 
 // Flame spawn delay
-const minDelay = 200
+const minDelay = 0
 const maxDelay = 1800
 
 export default class Bonfire extends Component {
