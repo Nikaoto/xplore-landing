@@ -40,6 +40,21 @@ export default class LanguageSelect extends Component {
     this.setState({showList: false})
   }
 
+  renderDownArrow(fillColor) {
+    return(
+      <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg">
+       <g>
+        <path 
+          fill={fillColor}
+          transform="rotate(90 5,5.0)" 
+          id="down_arrow_svg" 
+          d="m5.480882,5.000002l-2.816942,-4.836056l1.855179,0l2.816942,4.836056l-2.816942,4.836052l-1.855179,0l2.816942,-4.836052z" 
+        />
+       </g>
+      </svg>
+    )
+  }
+
   renderList() {
     if (this.state.showList === true) {
       return (
@@ -70,6 +85,9 @@ export default class LanguageSelect extends Component {
           <div style={{color: buttonTextColor, marginTop: -8}}>
             <div style={{fontSize: 25, marginLeft: -9, marginBottom: -25}}>ა</div>
             <div style={{fontSize: 20, marginLeft: 12}}>A</div>
+          </div>
+          <div style={{alignSelf: "center", marginLeft: 3}}>
+            {this.renderDownArrow(buttonTextColor)}
           </div>
         </button>
         {this.renderList()}
