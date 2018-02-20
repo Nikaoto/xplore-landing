@@ -16,8 +16,8 @@ const maxSmokeX = 130
 const minSmokeX = -40
 
 // Flame spawn delay
-const flameDelay = 120
-const smokeDelay = 450
+const flameDelay = 150
+const smokeDelay = 330
 
 export default class Bonfire extends Component {
 
@@ -29,7 +29,7 @@ export default class Bonfire extends Component {
 
   generateFlames() {
     let flames = []
-    for (let i = 0; i < flameCount; i++) {
+    for (let i = 1; i <= flameCount; i++) {
       flames.push(
         <Flame key={i} 
           delay={flameDelay * i} 
@@ -42,7 +42,7 @@ export default class Bonfire extends Component {
 
   generateSmoke() {
     let smoke = []
-    for (let i = 0; i < smokeCount; i++) {
+    for (let i = 1; i <= smokeCount; i++) {
       smoke.push(
         <Smoke key={i} 
           delay={smokeDelay * i} 
@@ -66,8 +66,8 @@ export default class Bonfire extends Component {
   }
 
   componentDidMount() {
-    this.generateSmoke()
     this.generateFlames()
+    this.generateSmoke()
   }
 
   render() {

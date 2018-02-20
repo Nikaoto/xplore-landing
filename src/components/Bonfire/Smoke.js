@@ -12,22 +12,21 @@ export default class Smoke extends Component {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
-  componentWillMount() {
+  componentWillMount() {  
+    const positionX = this.getRandomInt(this.props.minDisplacement || 0, this.props.maxDisplacement)
     this.setState({
-      positionX: this.getRandomInt(this.props.minDisplacement || 0, this.props.maxDisplacement)
+      style: {
+        width: this.props.size,
+        height: this.props.size,
+        left: positionX,
+        animationDelay: (this.props.delay/1000).toString() + "s"
+      }
     })
-
-    setTimeout(() => this.setState({visible: true}), this.props.delay)
   }
 
   render() {
-    if (this.state.visible == true) {
-      return(
-        <div className="smoke" 
-          style={{ left: this.state.positionX, width: this.props.size, height: this.props.size }}/>
-      )
-    } else {
-      return <div/>
-    }
+    const style = this.state.style
+    
+    return <div className="smoke" style={style} />
   }
 }
