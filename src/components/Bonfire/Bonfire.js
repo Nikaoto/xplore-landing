@@ -16,7 +16,7 @@ const maxSmokeX = 130
 const minSmokeX = -40
 
 // Flame spawn delay
-const flameDelay = 250
+const flameDelay = 120
 const smokeDelay = 450
 
 export default class Bonfire extends Component {
