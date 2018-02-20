@@ -5,9 +5,9 @@ import Rock from "../Rock"
 import "./Bonfire.css"
 
 const flameSize = 100
-const flameCount = 16
+const flameCount = 15
 const smokeSize = 100
-const smokeCount = 7
+const smokeCount = 6
 
 // Particle displacement
 const maxFlameX = 70
@@ -16,14 +16,15 @@ const maxSmokeX = 130
 const minSmokeX = -40
 
 // Flame spawn delay
-const flameDelay = 120
-const smokeDelay = 200
+const flameDelay = 250
+const smokeDelay = 450
 
 export default class Bonfire extends Component {
 
   constructor(props) {
     super(props)
-    this.state = { flames: []}
+    this.state = { }
+
   }
 
   generateFlames() {
@@ -36,7 +37,7 @@ export default class Bonfire extends Component {
           minDisplacement={minFlameX} maxDisplacement={maxFlameX}/>
       )
     }
-    this.flames = flames
+    this.setState({ flames: flames })
   }
 
   generateSmoke() {
@@ -49,7 +50,7 @@ export default class Bonfire extends Component {
           minDisplacement={minSmokeX} maxDisplacement={maxSmokeX}/>
       )
     }
-    this.smoke = smoke 
+    this.setState({ smoke: smoke })
   }
 
   renderRocks() {
@@ -64,17 +65,20 @@ export default class Bonfire extends Component {
     )
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.generateSmoke()
     this.generateFlames()
   }
 
   render() {
+    const flames = this.state.flames
+    const smoke = this.state.smoke
+
     return(
       <div style={styles.container}>
         <div style={styles.core} />
-        {this.smoke}
-        {this.flames}
+        {smoke}
+        {flames}
         {this.renderRocks()}
       </div>
     )
