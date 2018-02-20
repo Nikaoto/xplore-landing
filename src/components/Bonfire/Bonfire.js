@@ -16,8 +16,8 @@ const maxSmokeX = 130
 const minSmokeX = -40
 
 // Flame spawn delay
-const minDelay = 0
-const maxDelay = 1800
+const flameDelay = 120
+const smokeDelay = 200
 
 export default class Bonfire extends Component {
 
@@ -26,16 +26,12 @@ export default class Bonfire extends Component {
     this.state = { flames: []}
   }
 
-  lerp(fr, to, road) {
-    return fr + (to - fr) * road
-  }
-
   generateFlames() {
     let flames = []
     for (let i = 0; i < flameCount; i++) {
       flames.push(
         <Flame key={i} 
-          delay={this.lerp(minDelay, maxDelay, i/flameCount)} 
+          delay={flameDelay * i} 
           size={flameSize}
           minDisplacement={minFlameX} maxDisplacement={maxFlameX}/>
       )
@@ -48,7 +44,7 @@ export default class Bonfire extends Component {
     for (let i = 0; i < smokeCount; i++) {
       smoke.push(
         <Smoke key={i} 
-          delay={this.lerp(minDelay, maxDelay, i/smokeCount)} 
+          delay={smokeDelay * i} 
           size={smokeSize}
           minDisplacement={minSmokeX} maxDisplacement={maxSmokeX}/>
       )
