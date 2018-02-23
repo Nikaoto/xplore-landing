@@ -33,6 +33,7 @@
 	border-radius: 10px;
 	width: 60px;
 	height: auto;
+	align-self: center;
 }
 
 .footer-link, .footer-link:visited, .footer-link:focus {
