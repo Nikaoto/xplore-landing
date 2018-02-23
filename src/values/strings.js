@@ -5,8 +5,8 @@ const defaultLanguage = config.defaultLanguage
 const stringMap = {
   en: {
     headerTitle: "XPLORE",
-    heading: "Hikers, it's time we ditched Facebook.",
-    headingParagraph: "All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone. Stop paying for TeamSpeak servers and hassling with Skype. Simplify your life.",
+    heading: "We're wasting too much time planning hikes.",
+    headingParagraph: "All-in-one free platform for searching and quickly planning hikes, tours, and excursions, that safely works everywhere. Stop hassling with Facebook events. Simplify your life.",
     welcome: "Welcome!",
     header: "HEADER",
     body: "BODY",
