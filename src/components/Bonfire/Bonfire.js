@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import Flame from "./Flame"
 import Smoke from "./Smoke"
 import Rock from "../Rock"
-import "./Bonfire.css"
 
 const flameSize = 100
 const flameCount = 15
@@ -90,7 +89,7 @@ const styles = {
     position: "relative",
     alignSelf: "center",
     left: -flameSize,
-    marginTop: 200,
+    marginTop: 250,
     marginBottom: 200,
   },
   core: {
