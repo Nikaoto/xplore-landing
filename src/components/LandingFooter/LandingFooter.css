@@ -21,6 +21,10 @@
 }
 
 .footer-col > div {
+	align-self: center;
+}
+
+.footer-col > div > div {
 	margin-bottom: 4px;
 }
 
