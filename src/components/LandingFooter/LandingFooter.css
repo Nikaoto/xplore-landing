@@ -17,6 +17,7 @@
 .footer-col {
 	display: flex;
 	flex-direction: column;
+	margin-left: 15px;
 }
 
 .footer-col > div {
@@ -31,7 +32,7 @@
 }
 
 .footer-link, .footer-link:visited, .footer-link:focus {
-	font-family: Roboto;
+	font-family: Roboto,"BPG Mrgvlovani";
 	color: #c6c6c6;
 }
 

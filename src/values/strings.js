@@ -13,6 +13,10 @@ const stringMap = {
     footer: "FOOTER",
     blog: "Blog",
     more: "More",
+    contact: "Contact",
+    privacyPolicy: "Privacy Policy",
+    other: "Other",
+    email: "Email",
   },
   ka: {
     welcome: "კეთილი იყოს თქვენი მობრძანება!",
@@ -23,6 +27,9 @@ const stringMap = {
     footer: "საფეხური",
     blog: "ბლოგი",
     more: "მეტი",
+    contact: "კონტაქტი",
+    other: "სხვა",
+    email: "ელ-ფოსტა",
   },
 }
 

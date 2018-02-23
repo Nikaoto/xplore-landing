@@ -15,17 +15,37 @@ export default class LandingFooter extends Component {
 
 		return(
       <div className="landing-footer container">
-        <div className="footer-col" style={{flex: 1}}>
+        <div className="footer-col" style={{flex: 2}}>
           <img className="footer-logo" src={logo} />
         </div>
-        <div className="footer-col" style={{flex: 1}}>
-          <h3>Placeholder</h3>
+        <div className="footer-col" style={{flex: 3}}>
+          <h3>{str.contact}</h3>
+          <div>
+            <a className="footer-link" href={config.emailLink}>
+              <span>{str.email}</span>
+            </a>
+          </div>
+          <div>
+            <a className="footer-link" href={config.facebookLink}>
+              <span>Facebook</span>
+            </a>
+          </div>
+          <div>
+            <a className="footer-link" href={config.twitterLink}>
+              <span>Twitter</span>
+            </a>
+          </div>
+          <div>
+            <a className="footer-link" href={config.instagramLink}>
+              <span>Instagram</span>
+            </a>
+          </div>
         </div>
-        <div className="footer-col" style={{flex: 1}}>
-          <h3>{str.more}</h3>
+        <div className="footer-col" style={{flex: 3}}>
+          <h3>{str.other}</h3>
           <div>
             <a className="footer-link" href={config.privacyPolicyLink}>
-              <span>Privacy Policy</span>
+              <span>{str.privacyPolicy}</span>
             </a>
           </div>
           <div>
