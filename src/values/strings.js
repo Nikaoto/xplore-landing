@@ -5,7 +5,7 @@ const defaultLanguage = config.defaultLanguage
 const stringMap = {
   en: {
     headerTitle: "XPLORE",
-    heading: "We're wasting too much time planning hikes.",
+    heading: "Waste less time planning, spend more hiking.",
     headingParagraph: "All-in-one free platform for searching and quickly planning hikes, tours, and excursions, that safely works everywhere. Stop hassling with Facebook events. Simplify your life.",
     welcome: "Welcome!",
     header: "HEADER",
