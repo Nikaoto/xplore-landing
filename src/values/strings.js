@@ -11,6 +11,8 @@ const stringMap = {
     header: "HEADER",
     body: "BODY",
     footer: "FOOTER",
+    blog: "Blog",
+    more: "More",
   },
   ka: {
     welcome: "კეთილი იყოს თქვენი მობრძანება!",
@@ -19,6 +21,8 @@ const stringMap = {
     header: "სათაური",
     body: "სხეული",
     footer: "საფეხური",
+    blog: "ბლოგი",
+    more: "მეტი",
   },
 }
 

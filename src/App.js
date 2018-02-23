@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.png';
+import React, { Component } from 'react'
+import logo from "./logo.png"
+import squareLogo from "./squareLogo.png"
 import LandingHeader from "./components/LandingHeader"
 import LandingBody from "./components/LandingBody"
 import LandingFooter from "./components/LandingFooter"
@@ -32,7 +33,7 @@ class App extends Component {
         <LandingHeader strings={str} languages={config.languages} logo={logo} 
           onLanguageChange={this.onLanguageChange} />
         <LandingBody strings={str} language={language}/>
-        <LandingFooter strings={str} language={language}/>
+        <LandingFooter strings={str} language={language} logo={squareLogo}/>
       </div>
     );
   }

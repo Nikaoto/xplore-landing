@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import config from "../../values/config"
 import "./LandingFooter.css"
 
 export default class LandingFooter extends Component {
@@ -10,33 +11,30 @@ export default class LandingFooter extends Component {
 
 	render() {
     const str = this.props.strings
+    const logo = this.props.logo
 
 		return(
       <div className="landing-footer container">
-        <div className="footer-col" style={{flex: 2}}>
-          {/* Logo goes here */}
-          <h3>Placeholder</h3>
+        <div className="footer-col" style={{flex: 1}}>
+          <img className="footer-logo" src={logo} />
         </div>
         <div className="footer-col" style={{flex: 1}}>
           <h3>Placeholder</h3>
         </div>
         <div className="footer-col" style={{flex: 1}}>
-          <h3>More</h3>
+          <h3>{str.more}</h3>
           <div>
-            <a className="footer-link" href={privacyPolicyLink}>
+            <a className="footer-link" href={config.privacyPolicyLink}>
               <span>Privacy Policy</span>
             </a>
           </div>
           <div>
-            <a className="footer-link" href={termsAndConditionsLink}>
+            {/*<a className="footer-link" href={config.termsAndConditionsLink}>
               <span>Terms & Conditions</span>
-            </a>
+            </a>*/}
           </div>
         </div>
       </div>
     )
 	}
 }
-
-const privacyPolicyLink = "https://xplore.ge/privacy-policy"
-const termsAndConditionsLink = "https://xplore.ge/terms-and-conditions"

@@ -7,6 +7,8 @@ const config = {
   instagramLink: "https://instagram.com/xploreapp",
   playStoreLink: "https://play.google.com/store/apps/details?id=com.xplore",
   appleStoreLink: "#",
+  privacyPolicyLink: "https://xplore.ge/privacy-policy",
+  termsAndConditionsLink: "https://xplore.ge/terms-and-conditions",
 }
 
 export default config
