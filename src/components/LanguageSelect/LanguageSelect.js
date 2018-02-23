@@ -19,7 +19,7 @@ export default class LanguageSelect extends Component {
 
   changeLanguage(languageCode) {
     this.props.onLanguageChange(languageCode)
-    this.setState({showList: false})
+    this.setState({ buttonTextColor: "#b1b7bf", showList: false })
   }
 
   lightenImage() {
