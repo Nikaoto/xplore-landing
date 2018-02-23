@@ -34,9 +34,9 @@ const styleMap = {
       margin: 0,
     },
     headingParagraph: {
-      fontFamily: "BPG Mrgvlovani",
+      fontFamily: "BPG Arial",
       maxWidth: 750,
-      fontSize: 15,
+      fontSize: 17,
     },
   },
 }

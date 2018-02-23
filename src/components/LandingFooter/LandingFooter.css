@@ -3,7 +3,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	color: white;
-	font-family: Roboto, "BPG Mrgvlovani";
+	font-family: Roboto, "BPG Arial";
 	margin-top: 150px;
 	margin-bottom: 50px;
 }
@@ -32,7 +32,7 @@
 }
 
 .footer-link, .footer-link:visited, .footer-link:focus {
-	font-family: Roboto,"BPG Mrgvlovani";
+	font-family: Roboto, "BPG Arial";
 	color: #c6c6c6;
 }
 
