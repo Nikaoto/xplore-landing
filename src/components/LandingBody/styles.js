@@ -39,6 +39,19 @@ const styleMap = {
       fontSize: 17,
     },
   },
+  ru: {
+    headingTitle: {
+      fontFamily: "Roboto",
+      fontSize: 31,
+      fontWeight: 900 ,
+      margin: 0,
+    },
+    headingParagraph: {
+      fontFamily: "Roboto",
+      maxWidth: 800,
+      fontSize: 17,
+    },
+  },
 }
 
 const styles = (language) => {
