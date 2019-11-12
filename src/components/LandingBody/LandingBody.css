@@ -22,3 +22,9 @@
 .heading-paragraph {
 	color: #c6c6c6;
 }
+
+@media screen and (max-width: 400px) {
+	.heading-container {
+		padding: 4px 4px 10px 4px;
+	}
+}

@@ -26,15 +26,13 @@ export default class LandingHeader extends Component {
 
     return (
       <div className="header container">
-        <div className="left-side col-md-7">
+        <div className="left-side">
           <div className="header-logo-parent">
             <img className="header-logo-image" src={logo} />
             <p className="header-logo-text">{str.headerTitle}</p>
           </div>
-          {/*<div className="navbar" style={{backgroundColor: "red", width: 300, height: 50}}>
-          </div>*/}
         </div>
-        <div className="right-side col-md-4">
+        <div className="right-side">
 
             <div className="social-buttons">
               <a href={config.twitterLink} rel="me">

@@ -41,6 +41,18 @@
     justify-content: flex-end;
 }
 
+@media screen and (max-width: 600px) {
+	.social-buttons {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.right-side {
+		display: none;
+	}
+}
+
 .social-buttons {
 	display: flex;
 	flex-direction: row;

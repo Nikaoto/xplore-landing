@@ -7,14 +7,14 @@ const styleMap = {
     headingTitle: {
       fontFamily: "Lato",
       fontWeight: 900,
-      fontSize: 37,
+      fontSize: 47,
       margin: 0,
     },
     headingParagraph: {
       fontFamily: "Roboto",
-      maxWidth: 600,
+      maxWidth: 900,
       fontWeight: 300,
-      fontSize: 17,
+      fontSize: 27,
     },
     buttonContainer: { 
       alignSelf: "center",
@@ -30,13 +30,13 @@ const styleMap = {
   ka: {
     headingTitle: {
       fontFamily: "BPG Rioni Vera",
-      fontSize: 35,
+      fontSize: 37,
       margin: 0,
     },
     headingParagraph: {
       fontFamily: "BPG Arial",
-      maxWidth: 750,
-      fontSize: 17,
+      maxWidth: 900,
+      fontSize: 24,
     },
   },
   ru: {
