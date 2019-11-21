@@ -42,14 +42,14 @@ const styleMap = {
   ru: {
     headingTitle: {
       fontFamily: "Roboto",
-      fontSize: 31,
+      fontSize: 37,
       fontWeight: 900 ,
       margin: 0,
     },
     headingParagraph: {
       fontFamily: "Roboto",
       maxWidth: 800,
-      fontSize: 17,
+      fontSize: 25,
     },
   },
 }
