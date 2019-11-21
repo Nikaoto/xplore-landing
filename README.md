@@ -4,7 +4,7 @@ New(er) landing page for Xplore, an application for hikers.
 
 Available at https://xplore-landing.netlify.com/
 
-If you want to know how Xplore failed, you can read my blog post: [Learning from your failed startup](https://nika.ninja/blog/learning-from-your-failed-startup/)
+If you want to know how Xplore failed, you can read my blog post: [Learning from your failed startup](https://nika.ninja/blog/learning-from-your-failed-startup/).
 
 ### Install & run
 
